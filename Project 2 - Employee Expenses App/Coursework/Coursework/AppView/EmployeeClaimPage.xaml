@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Val="clr-namespace:Coursework.ViewModel"
+             x:Class="Coursework.AppView.EmployeeClaimPage">
+    <TableView Intent="Form" Margin="16,0">
+        <TableRoot>
+                <TableSection Title="User Details">
+                    <EntryCell Label="First Name" Text="{Binding FirstName}" Keyboard="Text"/>
+                    <EntryCell Label="Surname" Text="{Binding Surname}" Keyboard="Text"/>
+                </TableSection>
+                <TableSection Title="Expense Details">
+                <EntryCell Label="Date of Expense" Text="{Binding DateofExpense, StringFormat='{}{0:MM/dd/yyyy a\\t h:mm tt}'}" Keyboard="Default" />
+                <EntryCell Label="Date of Expense Added" Text="{Binding DateofExpenseAdded, StringFormat='{}{0:MM/dd/yyyy a\\t h:mm tt}'}" Keyboard="Default" IsEnabled="False"/>
+                    <EntryCell Label="Type of Expense" Text="{Binding TypeofExpense}" Keyboard="Text" />
+                    <EntryCell Label="Details of Expense" Text="{Binding DetailsofExpense}" Keyboard="Text" />
+                    <EntryCell Label="Cost (£)" Text="{Binding Cost}" Keyboard="Numeric" />
+                </TableSection>
+
+                <TableSection Title="Other Details">
+                <SwitchCell Text="VAT Included?" On="{Binding VAT}" />
+                <EntryCell Label="VAT Calculator (£)" Text="{Binding VATCalc}" IsEnabled="False"/>
+                <EntryCell Label="Without VAT (£)" Text="{Binding WithoutVAT}" IsEnabled="False"/>
+                </TableSection>
+
+                <TableSection>
+                    <ViewCell>
+                        <Button Text="Insert Photo" Command="{Binding PickPhotoCommand}" />
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Image Source="{Binding CImage}" />
+                    </ViewCell>
+                </TableSection>
+
+            <TableSection>
+                <SwitchCell Text="Has Expense Been Paid" On="{Binding HasExpenseBeenPaid}" x:Name="PayingClaims" />
+                <EntryCell Label="Date Expense was Paid" Text="{Binding DateExpenseWasPaid, StringFormat='{}{0:MM/dd/yyyy a\\t h:mm tt}'}" Keyboard="Default" x:Name="DateofPayingClaims" />
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Button Text="Save Claim" Command="{Binding SaveCommand}" />
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+</ContentPage>

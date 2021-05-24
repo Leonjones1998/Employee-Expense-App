@@ -1,0 +1,15 @@
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\bin\Debug\netstandard2.0\Coursework.deps.json
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\bin\Debug\netstandard2.0\Coursework.dll
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\bin\Debug\netstandard2.0\ref\Coursework.dll
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\bin\Debug\netstandard2.0\Coursework.pdb
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\obj\Debug\netstandard2.0\Coursework.csprojAssemblyReference.cache
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\obj\Debug\netstandard2.0\Coursework.AssemblyInfoInputs.cache
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\obj\Debug\netstandard2.0\Coursework.AssemblyInfo.cs
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\obj\Debug\netstandard2.0\Coursework.csproj.CoreCompileInputs.cache
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\obj\Debug\netstandard2.0\Coursework.dll
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\obj\Debug\netstandard2.0\ref\Coursework.dll
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\obj\Debug\netstandard2.0\Coursework.pdb
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\obj\Debug\netstandard2.0\AppView\EmployeeClaimPage.xaml.g.cs
+C:\Users\seana\source\repos\Coursework\Coursework\Coursework\obj\Debug\netstandard2.0\AppView\MainPage.xaml.g.cs

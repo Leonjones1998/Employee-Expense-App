@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'Spam/Css/Style.css' %}">
+        <title>NaiveBayes Spam filter</title>
+    </head>
+    <body>
+        <!-- Main Section Start -->
+        <section>
+            <!-- Header part start -->
+            <header>
+                <nav>
+                    <div><a href="#" class="brand">SpamTech</a></div>
+                    <ul>
+                        <li><a href="#" class="active">Web App</a></li>
+                        <li><a href="#" class="active">Web Api</a></li>
+                     </ul>
+                </nav>
+            </header>
+            <!-- Header part end -->
+
+            <!-- Main Content part start -->
+            <div class="fluid-container content">
+                <div class="row m-auto">
+                     <!-- Left side Text part start -->
+                    <div class="col-md-6 p-5 m-auto typ-content">
+                        <h1>Welcome To SpamTech</h1>
+                        <h5>[NaiveBayes Spam Email Detection]</h5>
+                        <p>This is a online web application where
+                            you can check any email text to Detect
+                            if its a Spam Email or not.</p>
+                        <p>Just enter your email content into the
+                            text box provided, press check and wait 
+                            for your data to me processed using our 
+                            NaiveBayes Spam Detection filter.</p>
+                        <p>After processing you will see your 
+                                result.</p>
+                    </div>
+                    <!-- Left side Text part end -->
+
+                    <!-- Form part start -->
+                    <div class="col-md-6 p-5 m-auto form-content">
+                        <form class="main-form" action="check" method="post">
+                            {% csrf_token %}
+                            <textarea name="rawdata" id="rawdata" placeholder="Enter Your Email Content Here...."></textarea>
+                            <div class="algo-choice">
+                                <label class="radiocontainer">
+                                    NaiveBayes
+                                    <input type="radio" name="algo" value="Algo-1" checked>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="check-holder">
+                                <button type="submit" class="check-btn">Check</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Form part end -->
+                </div>
+                <!-- Footer start -->
+                <div class="footer">
+                    <p>Copyright &copy; 2021 Developed by <b>Leon Jones</b></p>
+                </div>
+                <!-- Footer end -->
+            </div>
+            <!-- Main Content part end -->
+        </section>
+        <!-- Main Section End -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="/Js/Main.js"></script>
+    </body>
+</html>
